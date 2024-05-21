@@ -1,0 +1,8 @@
+stages:
+  - linting
+
+stylelint:
+  stage: linting
+  image: registry.gitlab.com/pipeline-components/stylelint:latest
+  script:
+    - stylelint --color '**/*.css'
