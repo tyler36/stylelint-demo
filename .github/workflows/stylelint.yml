@@ -1,0 +1,25 @@
+name: linting
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  stylelint:
+    name: stylelint
+    runs-on: ubuntu-latest
+    steps:
+      - name: "☁️ checkout repository"
+        uses: actions/checkout@v4
+
+      - name: '🧹 Stylelint'
+        uses: actions-hub/stylelint@master
+        env:
+          PATTERN: "**/*.css"
