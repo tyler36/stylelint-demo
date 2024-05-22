@@ -1,0 +1,9 @@
+{
+  "stylelint.enable": true,
+  "stylelint.configBasedir": "${workspaceFolder}",
+  "stylelint.reportNeedlessDisables": true,
+  "stylelint.reportInvalidScopeDisables": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  }
+}
