@@ -24,7 +24,7 @@
     /* Flush to parent comment */
     --offset: 0px;
 
-    color: #FFF;
+    color: #FFG;
     font-family: Helvetica, "Arial Black", sans-serif;
     left: calc(var(--offset) + 50%);
   }
