@@ -202,6 +202,10 @@ vendor/**/*.css
   "stylelint.configBasedir": "${workspaceFolder}",
   "stylelint.reportNeedlessDisables": true,
   "stylelint.reportInvalidScopeDisables": true,
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": "explicit"
   }
