@@ -7,7 +7,7 @@
     "lint:css:fix": "stylelint **/*.css --fix"
   },
   "devDependencies": {
-    "stylelint": "^16.21.0",
+    "stylelint": "^16.21.1",
     "stylelint-config-standard": "^38.0.0"
   }
 }
