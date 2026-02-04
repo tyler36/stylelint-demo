@@ -33,5 +33,3 @@ jobs:
 
       - name: '🧹 Run stylelint'
         run: npx stylelint "**/*.css"
-        env:
-          PATTERN: "**/*.css"
